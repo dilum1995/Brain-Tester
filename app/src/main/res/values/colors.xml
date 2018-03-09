@@ -1,8 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--Common colors-->
     <color name="colorPrimary">#0097a7</color>
-    <color name="colorPrimaryDark">#0097a7</color>
+    <color name="colorPrimaryDark">#095158</color>
     <color name="colorAppBlack">#32383F</color>
-    <color name="splashScreenWhite">#F7F9F8</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="Text">#FFFFFF</color>
+
+    <!--Colors related to splash screen-->
+    <color name="splashScreenWhite">#F7F9F8</color>
+    <color name="lodingMessege">#C6FAFF</color>
+
+    <!--progress bar related colours-->
+    <color name="pb_startColor">#E8EAE8</color>
+    <color name="pb_endColor">#FFFFFF</color>
+
+    <!--Progress Bar Background-->
+    <color name="pb_startBackground">#4C8B91</color>
+    <color name="pb_endBackground">#096068</color>
+    <color name="pb_centerBackground">#074D54</color>
+
+
+    <!--Menu button related colors-->
+    <color name="menuButton_Background">#FFFFFF</color>
+    <color name="menu_buttonText">#338890</color>
+
+
+    <!--Background Gradients-->
+    <color name="gradient_end">#38959E</color>
+    <color name="gradient_center">#39969E</color>
+    <color name="gradient_start">#095158</color>
+
 </resources>

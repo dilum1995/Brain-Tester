@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/background_gradients"
     tools:context="com.example.dilumdesilva.brain_tester.game_menu">
 
     <LinearLayout
@@ -12,18 +12,52 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:id="@+id/menuScreen_Ll">
+        android:id="@+id/menuScreen_Ll"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="This is menu Screen"
-            android:textColor="@color/splashScreenWhite"/>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello Wrold"/>
+            android:layout_marginBottom="@dimen/verticle_buttonSpace"
+            android:text="@string/menu_new_game"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/menu_buttonText"
+            android:textSize="@dimen/menu_button_textSize"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/verticle_buttonSpace"
+            android:text="@string/menu_continue"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/menu_buttonText"
+            android:textSize="@dimen/menu_button_textSize"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/verticle_buttonSpace"
+            android:text="@string/menu_about"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/menu_buttonText"
+            android:textSize="@dimen/menu_button_textSize"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/verticle_buttonSpace"
+            android:text="@string/menu_exit"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/menu_buttonText"
+            android:textSize="@dimen/menu_button_textSize"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/background_gradients"
     android:id="@+id/activity_splash_screen"
     tools:context="com.example.dilumdesilva.brain_tester.Splash_screen">
 
@@ -18,16 +18,37 @@
         <ImageView
             android:id="@+id/ss_imageView"
             android:layout_width="480dp"
-            android:layout_height="480dp"
+            android:layout_height="400dp"
             android:layout_gravity="center"
             android:src="@drawable/logo" />
+
+        <ProgressBar
+            android:id="@+id/ss_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:max="100"
+            android:layout_above="@+id/ss_imageView"
+            android:layout_marginTop="0dp"
+            android:progressDrawable="@drawable/progress_bar"/>
+
+        <TextView
+            android:id="@+id/ss_lblLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/progress_bar"
+            android:text="@string/loading_message"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/lodingMessege"/>
 
         <TextView
             android:id="@+id/ss_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="65dp"
-            android:text="Copyright © 2018 | Developed by Dilum De Silva"
+            android:layout_marginTop="95dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/copyright_messege"
             android:textColor="@color/splashScreenWhite"
             android:textSize="10sp"
             android:textStyle="normal" />

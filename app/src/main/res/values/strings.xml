@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Brain_Tester</string>
+
+    <!--splash screen related strings-->
+    <string name="loading_message">Loding...</string>
+    <string name="copyright_messege">Copyright © 2018 | Developed by Dilum De Silva</string>
+
+    <!--Menu items-->
+    <string name="menu_new_game">NEW GAME</string>
+    <string name="menu_continue">CONTINUE</string>
+    <string name="menu_about">ABOUT</string>
+    <string name="menu_exit">EXIT</string>
+
+
 </resources>
