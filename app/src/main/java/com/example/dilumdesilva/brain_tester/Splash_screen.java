@@ -34,7 +34,7 @@ public class Splash_screen extends AppCompatActivity {
         ss_textView.startAnimation(splashScreenAnim);
 
         //creating an intent to communicate with the menu screen activity
-        final Intent intent = new Intent(this, game_menu.class);
+        final Intent intent = new Intent(this, game_screen.class);
 
         //setting a timer to automatically continue to the main menu screen after splash screen
 //        Thread timer = new Thread(){
