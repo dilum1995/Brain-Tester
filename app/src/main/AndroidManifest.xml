@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Splash_screen">
+
+        <!--excludeFromRecents will terminate the app from the background activity and recents as well-->
+        <activity android:name=".Splash_screen" android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

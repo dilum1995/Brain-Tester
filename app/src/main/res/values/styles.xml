@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--This style will apply for the dialog boxes -->
+    <style name="whiteDialogBoxTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/Text</item>
+    </style>
+
 </resources>

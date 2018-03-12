@@ -16,10 +16,11 @@
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
         android:layout_marginBottom="30dp"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="130dp">
 
 
         <Button
+            android:id="@+id/btn_newGame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/verticle_buttonSpace"
@@ -30,6 +31,7 @@
             android:textStyle="bold"/>
 
         <Button
+            android:id="@+id/btn_continueGame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/verticle_buttonSpace"
@@ -40,6 +42,7 @@
             android:textStyle="bold"/>
 
         <Button
+            android:id="@+id/btn_aboutGame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/verticle_buttonSpace"
@@ -50,6 +53,7 @@
             android:textStyle="bold"/>
 
         <Button
+            android:id="@+id/btn_exitGame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/verticle_buttonSpace"
@@ -58,6 +62,17 @@
             android:textColor="@color/menu_buttonText"
             android:textSize="@dimen/menu_button_textSize"
             android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:gravity="center"
+            android:textColor="@color/Text"
+            android:text="@string/copyright_messege"
+            android:textSize="8sp"
+            android:layout_marginTop="120dp"/>
 
     </LinearLayout>
 

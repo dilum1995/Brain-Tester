@@ -50,7 +50,7 @@
             android:layout_marginBottom="0dp"
             android:text="@string/copyright_messege"
             android:textColor="@color/splashScreenWhite"
-            android:textSize="10sp"
+            android:textSize="@dimen/copyright_textSize"
             android:textStyle="normal" />
 
     </LinearLayout>

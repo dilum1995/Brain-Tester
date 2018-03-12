@@ -11,5 +11,8 @@
     <string name="menu_about">ABOUT</string>
     <string name="menu_exit">EXIT</string>
 
+    <string name="bulleted_rules_list">
+        <li>01 - First item\n02 - Second item\n03- Third item\n04 - Fourth item\n05 - Fifth item\n</li>
+    </string>
 
 </resources>

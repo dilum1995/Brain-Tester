@@ -2,4 +2,7 @@
 <resources>
     <dimen name="verticle_buttonSpace">20dp</dimen>
     <dimen name="menu_button_textSize">17sp</dimen>
+    <dimen name="about_popup_height">475dp</dimen>
+    <dimen name="about_popup_width">350dp</dimen>
+    <dimen name="copyright_textSize">10sp</dimen>
 </resources>
