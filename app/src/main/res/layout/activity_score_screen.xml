@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradients"
+    tools:context="com.example.dilumdesilva.brain_tester.score_screen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tittle_scoreScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Score"
+            android:textColor="@color/Text"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"/>
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="400dp">-->
+
+
+            <ListView
+                android:id="@+id/list_scoreScreen"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_marginBottom="5dp"></ListView>
+
+
+        <!--</ScrollView>-->
+
+
+        <Button
+            android:id="@+id/btnBack_scoreScreen"
+            android:layout_width="170dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/menu_buttonText"
+            android:textSize="@dimen/menu_button_textSize"
+            android:textStyle="bold"
+            android:elevation="16dp"
+            android:text="Back"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

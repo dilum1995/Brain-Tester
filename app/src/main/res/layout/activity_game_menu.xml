@@ -7,18 +7,19 @@
     android:background="@drawable/background_gradients"
     tools:context="com.example.dilumdesilva.brain_tester.game_menu">
 
+    <!--Menu Screen inner layout-->
     <LinearLayout
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:id="@+id/menuScreen_Ll"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="130dp">
+        android:layout_marginLeft="@dimen/menuScreen_lL_marginLeft"
+        android:layout_marginRight="@dimen/menuScreen_lL_marginRight"
+        android:layout_marginBottom="@dimen/menuScreen_lL_marginBottom"
+        android:layout_marginTop="@dimen/menuScreen_lL_marginTop">
 
-
+        <!--New game Button-->
         <Button
             android:id="@+id/btn_newGame"
             android:layout_width="match_parent"
@@ -28,8 +29,10 @@
             android:background="@drawable/rounded_button"
             android:textColor="@color/menu_buttonText"
             android:textSize="@dimen/menu_button_textSize"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:elevation="@dimen/menuScreen_button_elevation" />
 
+        <!--Continue Button-->
         <Button
             android:id="@+id/btn_continueGame"
             android:layout_width="match_parent"
@@ -39,8 +42,10 @@
             android:background="@drawable/rounded_button"
             android:textColor="@color/menu_buttonText"
             android:textSize="@dimen/menu_button_textSize"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:elevation="@dimen/menuScreen_button_elevation"/>
 
+        <!--About Button-->
         <Button
             android:id="@+id/btn_aboutGame"
             android:layout_width="match_parent"
@@ -50,8 +55,10 @@
             android:background="@drawable/rounded_button"
             android:textColor="@color/menu_buttonText"
             android:textSize="@dimen/menu_button_textSize"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:elevation="@dimen/menuScreen_button_elevation"/>
 
+        <!--Exit Button-->
         <Button
             android:id="@+id/btn_exitGame"
             android:layout_width="match_parent"
@@ -61,9 +68,10 @@
             android:background="@drawable/rounded_button"
             android:textColor="@color/menu_buttonText"
             android:textSize="@dimen/menu_button_textSize"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:elevation="@dimen/menuScreen_button_elevation" />
 
-
+        <!--Copyright Message-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,8 +79,8 @@
             android:gravity="center"
             android:textColor="@color/Text"
             android:text="@string/copyright_messege"
-            android:textSize="8sp"
-            android:layout_marginTop="120dp"/>
+            android:textSize="9sp"
+            android:layout_marginTop="@dimen/menuScreen_copyrightMsg_marginTop"/>
 
     </LinearLayout>
 

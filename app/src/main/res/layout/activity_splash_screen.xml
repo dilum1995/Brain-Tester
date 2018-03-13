@@ -8,28 +8,30 @@
     android:id="@+id/activity_splash_screen"
     tools:context="com.example.dilumdesilva.brain_tester.Splash_screen">
 
-
+    <!--Splash screen inner layout-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
 
+        <!--image view which holds the logo of the splash screen-->
         <ImageView
             android:id="@+id/ss_imageView"
-            android:layout_width="480dp"
-            android:layout_height="400dp"
+            android:layout_width="@dimen/splashScreen_logoWidth"
+            android:layout_height="@dimen/splashScreen_logoHeight"
             android:layout_gravity="center"
             android:src="@drawable/logo" />
 
+        <!--progerss bar of the splash screen-->
         <ProgressBar
             android:id="@+id/ss_progress_bar"
             style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="200dp"
-            android:layout_height="2dp"
+            android:layout_width="@dimen/splashScreen_pb_width"
+            android:layout_height="@dimen/splashScreen_pb_height"
             android:max="100"
             android:layout_above="@+id/ss_imageView"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="@dimen/splashScreen_pb_marginTop"
             android:progressDrawable="@drawable/progress_bar"/>
 
         <TextView
@@ -38,20 +40,12 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/progress_bar"
             android:text="@string/loading_message"
-            android:layout_marginTop="5dp"
-            android:textSize="12sp"
-            android:textColor="@color/lodingMessege"/>
+            android:layout_marginTop="@dimen/splashScreen_lodingMsg_marginTop"
+            android:textSize="@dimen/splashScreen_lodingMsg_textSize"
+            android:textColor="@color/lodingMessege"
+            android:layout_marginBottom="@dimen/splashScreen_lodingMsg_marginBottom"/>
 
-        <TextView
-            android:id="@+id/ss_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="95dp"
-            android:layout_marginBottom="0dp"
-            android:text="@string/copyright_messege"
-            android:textColor="@color/splashScreenWhite"
-            android:textSize="@dimen/copyright_textSize"
-            android:textStyle="normal" />
+
 
     </LinearLayout>
 

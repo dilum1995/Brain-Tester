@@ -10,8 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!--excludeFromRecents will terminate the app from the background activity and recents as well-->
-        <activity android:name=".Splash_screen" android:excludeFromRecents="true">
+        <!-- excludeFromRecents will terminate the app from the background activity and recents as well -->
+        <activity
+            android:name=".Splash_screen"
+            android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".game_menu" />
-        <activity android:name=".game_screen"></activity>
+        <activity android:name=".game_screen" />
+        <activity android:name=".score_screen"></activity>
     </application>
 
 </manifest>

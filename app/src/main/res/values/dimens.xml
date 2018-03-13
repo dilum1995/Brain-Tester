@@ -1,8 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--Splash screen related dimensions-->
+    <dimen name="splashScreen_logoWidth">480dp</dimen>
+    <dimen name="splashScreen_logoHeight">400dp</dimen>
+    <dimen name="splashScreen_pb_width">200dp</dimen>
+    <dimen name="splashScreen_pb_height">2dp</dimen>
+    <dimen name="splashScreen_pb_marginTop">1dp</dimen>
+    <dimen name="splashScreen_lodingMsg_marginTop">5dp</dimen>
+    <dimen name="splashScreen_lodingMsg_textSize">11sp</dimen>
+    <dimen name="splashScreen_lodingMsg_marginBottom">55dp</dimen>
+
+    <!--menu screen related dimensions-->
     <dimen name="verticle_buttonSpace">20dp</dimen>
     <dimen name="menu_button_textSize">17sp</dimen>
+    <dimen name="menuScreen_lL_marginLeft">60dp</dimen>
+    <dimen name="menuScreen_lL_marginRight">60dp</dimen>
+    <dimen name="menuScreen_lL_marginBottom">30dp</dimen>
+    <dimen name="menuScreen_lL_marginTop">130dp</dimen>
+    <dimen name="menuScreen_button_elevation">16dp</dimen>
+    <dimen name="menuScreen_copyrightMsg_marginTop">120dp</dimen>
+
+    <!--about popup screen related dimensions-->
     <dimen name="about_popup_height">475dp</dimen>
     <dimen name="about_popup_width">350dp</dimen>
-    <dimen name="copyright_textSize">10sp</dimen>
+    <dimen name="aboutPopUp_layoutWidth">300dp</dimen>
+    <dimen name="aboutPopUp_layoutHeight">455dp</dimen>
+    <dimen name="aboutPopUp_closeBtnWidth">30dp</dimen>
+    <dimen name="aboutPopUp_closeBtnHeight">30dp</dimen>
+    <dimen name="aboutPopUp_closeBtn_marginBottom">3dp</dimen>
+    <dimen name="aboutPopUp_closeBtn_marginRight">5dp</dimen>
+    <dimen name="aboutPopUp_closeBtn_marginTop">5dp</dimen>
+    <dimen name="aboutPopUp_titile_marginBottom">2dp</dimen>
+    <dimen name="aboutPopUp_firstRuleSet_marginTop">125dp</dimen>
+    <dimen name="aboutPopUp_firstRuleSet_marginBottom">20dp</dimen>
+    <dimen name="aboutPopUp_secondRuleSet_marginTop">20dp</dimen>
+    <dimen name="aboutPopUp_copyrightMsg_marginTop">5dp</dimen>
+
+    <!--copyright label related dimensions-->
+    <dimen name="copyright_textSize">9sp</dimen>
+
+    <!--keypad layout related dimensions-->
+    <dimen name="keypad_button_textSize">30sp</dimen>
+    <dimen name="keypadButton_width">60dp</dimen>
+    <dimen name="keypadButton_height">60dp</dimen>
+    <dimen name="marginBottom_keypad_row">10dp</dimen>
+    <dimen name="key_margin_left_right">10dp</dimen>
+    <dimen name="keypad_btn_elevation">20dp</dimen>
+    <dimen name="gameRules_fontSize">13sp</dimen>
+    <dimen name="gameRules_title">25sp</dimen>
+    <dimen name="rulesTextV_width">228dp</dimen>
+
+
+
+
 </resources>

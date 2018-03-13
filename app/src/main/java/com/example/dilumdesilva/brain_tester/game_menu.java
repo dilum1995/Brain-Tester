@@ -3,6 +3,7 @@ package com.example.dilumdesilva.brain_tester;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AlertDialog;
@@ -16,6 +17,10 @@ import android.widget.Button;
 import android.widget.PopupMenu;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class game_menu extends AppCompatActivity implements View.OnClickListener {
 
@@ -66,6 +71,37 @@ public class game_menu extends AppCompatActivity implements View.OnClickListener
 
     //method which direct the player to the steps of starting the game
     private void showDifficultyPage() {
+        List<String> listDifficultyLevel = new ArrayList<String>();
+        listDifficultyLevel.add("Novice");
+        listDifficultyLevel.add("Easy");
+        listDifficultyLevel.add("Medium");
+        listDifficultyLevel.add("Guru");
+
+        //Create sequence of items
+        final CharSequence[] Difficulty = listDifficultyLevel.toArray(new String[listDifficultyLevel.size()]);
+
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this,R.style.whiteDialogBoxTheme);
+        dialogBuilder.setTitle("Please select the game listDifficultyLevel");
+
+        dialogBuilder.setItems(Difficulty, new DialogInterface.OnClickListener() {
+
+            //when an item is clicked, listDifficultyLevel is passed via the intent
+            public void onClick(DialogInterface dialog, int item) {
+                //the selected item stored in a string to be passed
+                String selectedDifficulty = Difficulty[item].toString();
+                Intent intent = new Intent(getBaseContext(), game_screen.class);
+                intent.putExtra("DifficultyLevel", selectedDifficulty);
+
+                Toast.makeText(game_menu.this, selectedDifficulty + " Difficulty selected",Toast.LENGTH_SHORT).show();
+
+                //start the Game Screen activity
+                startActivity(intent);
+            }
+        });
+        //Create alert dialog object via builder
+        AlertDialog alertDialogObject = dialogBuilder.create();
+        //Show the dialog
+        alertDialogObject.show();
     }
 
 
@@ -80,7 +116,7 @@ public class game_menu extends AppCompatActivity implements View.OnClickListener
                     (ViewGroup) findViewById(R.id.dilum_customPopUp));
 
             //initialize a size for the popup
-            about_popUpWindow = new PopupWindow(layout, 1000, 1400, true);
+            about_popUpWindow = new PopupWindow(layout, 1000, 1450, true);
 
             // display the popup in the center
             about_popUpWindow.showAtLocation(v, Gravity.CENTER, 0, 0);

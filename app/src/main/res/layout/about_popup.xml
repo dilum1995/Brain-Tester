@@ -2,42 +2,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:id="@+id/dilum_customPopUp"
-    android:layout_width="300dp"
-    android:layout_height="450dp"
+    android:layout_width="@dimen/aboutPopUp_layoutWidth"
+    android:layout_height="@dimen/aboutPopUp_layoutHeight"
     android:background="@color/colorAppBlack"
     android:layout_gravity="center"
     android:alpha="0.96">
 
+    <!--X - close button related layout-->
     <TextView
         android:id="@+id/popupClose"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/aboutPopUp_closeBtnWidth"
+        android:layout_height="@dimen/aboutPopUp_closeBtnHeight"
         android:textColor="@color/Text"
-        android:text="X"
+        android:text="@string/aboutPopUp_closeBtnXsign"
         android:textStyle="bold"
         android:layout_gravity="end"
         android:gravity="center"
         android:background="@drawable/closebtn_background"
-        android:layout_marginBottom="3dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginBottom="@dimen/aboutPopUp_closeBtn_marginBottom"
+        android:layout_marginRight="@dimen/aboutPopUp_closeBtn_marginRight"
+        android:layout_marginTop="@dimen/aboutPopUp_closeBtn_marginTop"/>
 
-
+        <!--Title of the popup screen-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Rules and Guide"
+            android:text="@string/rules_of_the_game"
             android:textColor="@color/Text"
-            android:textSize="25sp"
+            android:textSize="@dimen/gameRules_title"
             android:layout_gravity="center"
             android:gravity="center"
-            android:layout_marginBottom="5dp"/>
+            android:layout_marginBottom="@dimen/aboutPopUp_titile_marginBottom"/>
 
+    <!--Scroll view which holds the rules of the game-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <!--Layout of the rules statements area-->
         <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,43 +50,45 @@
 
 
             <TextView
-                android:layout_width="230dp"
+                android:layout_width="@dimen/rulesTextV_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/Text"
-                android:text="@string/bulleted_rules_list"
+                android:text="@string/bulleted_rules_list1"
                 android:textStyle="bold"
-                android:textSize="25sp"
+                android:textSize="@dimen/gameRules_fontSize"
                 android:layout_gravity="center"
-                android:layout_marginTop="190dp"
+                android:layout_marginTop="@dimen/aboutPopUp_firstRuleSet_marginTop"
+                android:layout_marginBottom="@dimen/aboutPopUp_firstRuleSet_marginBottom"
                 android:gravity="center|left"/>
 
             <TextView
-                android:layout_width="230dp"
+                android:layout_width="@dimen/rulesTextV_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/Text"
-                android:text="@string/bulleted_rules_list"
+                android:text="@string/bulleted_rules_list2"
                 android:textStyle="bold"
-                android:textSize="25sp"
+                android:textSize="@dimen/gameRules_fontSize"
                 android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/aboutPopUp_secondRuleSet_marginTop"
                 android:gravity="center|left"/>
 
 
             <TextView
-                android:layout_width="230dp"
+                android:layout_width="@dimen/rulesTextV_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/Text"
-                android:text="@string/bulleted_rules_list"
+                android:text="@string/bulleted_rules_list3"
                 android:textStyle="bold"
-                android:textSize="25sp"
+                android:textSize="@dimen/gameRules_fontSize"
                 android:layout_gravity="center"
                 android:gravity="center|left"/>
 
-
+            <!--Copyright msg of the about popup-->
             <TextView
                 android:id="@+id/aboutPage_copyright"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="@dimen/aboutPopUp_copyrightMsg_marginTop"
                 android:text="@string/copyright_messege"
                 android:textColor="@color/splashScreenWhite"
                 android:textSize="@dimen/copyright_textSize"

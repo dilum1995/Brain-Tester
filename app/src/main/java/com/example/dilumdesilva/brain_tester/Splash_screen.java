@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class Splash_screen extends AppCompatActivity {
 
 //    declaring splash screen related components
-    private TextView ss_textView;
+    //private TextView ss_textView;
     private ImageView ss_imageView;
     private ProgressBar ss_progress_bar;
     private Thread progressBarThread;
@@ -25,13 +25,13 @@ public class Splash_screen extends AppCompatActivity {
 
         //initializing the components by Id
         ss_imageView =  (ImageView) findViewById(R.id.ss_imageView);
-        ss_textView = (TextView) findViewById(R.id.ss_textView);
+        //ss_textView = (TextView) findViewById(R.id.ss_textView);
         ss_progress_bar = (ProgressBar) findViewById(R.id.ss_progress_bar);
 
         //setting the splash screen animation to the splash screen
         Animation splashScreenAnim = AnimationUtils.loadAnimation(this, R.anim.splash_transition);
         ss_imageView.startAnimation(splashScreenAnim);
-        ss_textView.startAnimation(splashScreenAnim);
+        //ss_textView.startAnimation(splashScreenAnim);
 
         //creating an intent to communicate with the menu screen activity
         final Intent intent = new Intent(this, game_menu.class);

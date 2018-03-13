@@ -5,14 +5,55 @@
     <string name="loading_message">Loding...</string>
     <string name="copyright_messege">Copyright © 2018 | Developed by Dilum De Silva</string>
 
+
     <!--Menu items-->
     <string name="menu_new_game">NEW GAME</string>
     <string name="menu_continue">CONTINUE</string>
     <string name="menu_about">ABOUT</string>
     <string name="menu_exit">EXIT</string>
 
-    <string name="bulleted_rules_list">
-        <li>01 - First item\n02 - Second item\n03- Third item\n04 - Fourth item\n05 - Fifth item\n</li>
+    <!--about page game rules and instructions related strings-->
+
+    <string name="rules_of_the_game">Rules of the Game</string>
+
+    <string name="bulleted_rules_list1">
+        In this game you will get\n\n\n
+        <li>04 difficulty levels\n</li>
+        <li>10 questions at a round\n</li>
+        <li>10 seconds per question\n</li>
+        <li>4 attempts per question\n</li>
     </string>
+
+    <string name="bulleted_rules_list2">
+        Difficulty Levels of the Game\n\n\n
+        <li>Novice\n</li>
+        <li>Easy\n</li>
+        <li>Medium\n</li>
+        <li>Guru\n</li>
+    </string>
+
+    <string name="bulleted_rules_list3">
+        About game controllers\n\n\n
+        <li>You will get a full size keypad\n\n</li>
+        <li>Key pad has 03 utility keys\n</li>
+        <ul>
+            <li># Key - to submit the answer\n</li>
+            <li>D Key - To delete\n</li>
+            <li>- Key - To enter negative values\n\n</li>
+         </ul>
+        <li>1-9 Keys to enter values\n</li>
+
+    </string>
+
+
+    <string name="year_label">Copyright © 2018</string>
+
+    <!--Game screen related strings-->
+    <string name="label_seconds_left">- Seconds left</string>
+    <string name="label_hints_on_off">Hints OFF</string>
+    <string name="lbl_QuestionCounter">Q 01</string>
+    <string name="lbl_Question">QUESTION</string>
+    <string name="aboutPopUp_closeBtnXsign">X</string>
+
 
 </resources>
