@@ -54,6 +54,8 @@
     <string name="lbl_QuestionCounter">Q 01</string>
     <string name="lbl_Question">QUESTION</string>
     <string name="aboutPopUp_closeBtnXsign">X</string>
+    <string name="gameScreen_secondsCounter">10</string>
+    <string name="gameScreen_hintsResult_label">HINT or RESULT</string>
 
 
 </resources>

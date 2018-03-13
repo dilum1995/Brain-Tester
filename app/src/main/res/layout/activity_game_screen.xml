@@ -22,15 +22,15 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:orientation="horizontal"
-            android:layout_marginBottom="40dp">
+            android:layout_marginBottom="@dimen/gameScreen_upperArea_marginBottom">
 
             <TextView
                 android:id="@+id/labelHintsOnOff"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="7dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="@dimen/gameScreen_hintsState_marginLeft"
+                android:layout_marginRight="@dimen/gameScreen_hintsState_marginRight"
+                android:layout_marginTop="@dimen/gameScreen_hintsState_marginTop"
                 android:text="@string/label_hints_on_off"
                 android:textColor="@color/Text" />
 
@@ -38,14 +38,14 @@
                 android:id="@+id/switchHints"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="@dimen/gameScreen_switch_marginTop" />
 
 
             <TextView
                 android:id="@+id/labelTimeCounter_TV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10"
+                android:text="@string/gameScreen_secondsCounter"
                 android:textColor="@color/Text"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="85dp"
@@ -57,18 +57,19 @@
                android:layout_height="wrap_content"
                android:text="@string/label_seconds_left"
                android:textColor="@color/Text"
-               android:layout_marginTop="20dp"
-               android:layout_marginRight="7dp"/>
+               android:layout_marginTop="@dimen/gameScreen_secondsCounter_marginTop"
+               android:layout_marginRight="@dimen/gameScreen_secondsCounter_marginRight"/>
 
 
         </LinearLayout>
 
+        <!--Question counter area-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:layout_marginBottom="3dp">
+            android:layout_marginBottom="@dimen/gameScreen_qCounterArea_lL_marginBottom">
 
             <TextView
                 android:id="@+id/questionCounter_TV"
@@ -77,18 +78,18 @@
                 android:text="@string/lbl_QuestionCounter"
                 android:textColor="@color/Text"
                 android:textStyle="bold"
-                android:textSize="15sp"/>
+                android:textSize="@dimen/gameScreen_qCounterArea_textSize"/>
 
         </LinearLayout>
 
-
+        <!--Question and answer area-->
         <LinearLayout
             android:id="@+id/ll_questionHolder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="@dimen/gameScreen_answerArea_lL_marginBottom"
             android:background="@drawable/question_box">
 
 
@@ -99,8 +100,8 @@
                 android:text="@string/lbl_Question"
                 android:textColor="@color/Text"
                 android:textStyle="bold"
-                android:textSize="20sp"
-                android:layout_marginLeft="5dp"/>
+                android:textSize="@dimen/gameScreen_questionArea_TextSize"
+                android:layout_marginLeft="@dimen/gameScreen_questionLabel_marginLeft"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -108,7 +109,7 @@
                 android:text=" = "
                 android:textColor="@color/Text"
                 android:textStyle="bold"
-                android:textSize="20sp"/>
+                android:textSize="@dimen/gameScreen_questionArea_TextSize"/>
 
             <TextView
                 android:id="@+id/answer_TV"
@@ -117,8 +118,8 @@
                 android:text=" ANSWER "
                 android:textColor="@color/Text"
                 android:textStyle="bold"
-                android:textSize="20sp"
-                android:layout_marginRight="5dp"/>
+                android:textSize="@dimen/gameScreen_answerLabel_TextSize"
+                android:layout_marginRight="@dimen/gameScreen_answerLabel_marginRight"/>
 
 
         </LinearLayout>
@@ -130,9 +131,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="HINT or RESULT"
+            android:text="@string/gameScreen_hintsResult_label"
             android:textColor="@color/Text"
-            android:textSize="20sp"
+            android:textSize="@dimen/gameScreen_hintsResultArea_textSize"
             android:textStyle="bold"
             android:layout_marginBottom="50dp"/>
 

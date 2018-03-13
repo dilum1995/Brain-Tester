@@ -50,8 +50,21 @@
     <dimen name="gameRules_fontSize">13sp</dimen>
     <dimen name="gameRules_title">25sp</dimen>
     <dimen name="rulesTextV_width">228dp</dimen>
-
-
+    <dimen name="gameScreen_answerLabel_TextSize">20sp</dimen>
+    <dimen name="gameScreen_answerLabel_marginRight">5dp</dimen>
+    <dimen name="gameScreen_questionArea_TextSize">20sp</dimen>
+    <dimen name="gameScreen_answerArea_lL_marginBottom">50dp</dimen>
+    <dimen name="gameScreen_qCounterArea_lL_marginBottom">3dp</dimen>
+    <dimen name="gameScreen_qCounterArea_textSize">15sp</dimen>
+    <dimen name="gameScreen_upperArea_marginBottom">40dp</dimen>
+    <dimen name="gameScreen_hintsState_marginLeft">30dp</dimen>
+    <dimen name="gameScreen_hintsState_marginRight">7dp</dimen>
+    <dimen name="gameScreen_hintsState_marginTop">20dp</dimen>
+    <dimen name="gameScreen_switch_marginTop">20dp</dimen>
+    <dimen name="gameScreen_secondsCounter_marginTop">20dp</dimen>
+    <dimen name="gameScreen_secondsCounter_marginRight">7dp</dimen>
+    <dimen name="gameScreen_questionLabel_marginLeft">5dp</dimen>
+    <dimen name="gameScreen_hintsResultArea_textSize">20sp</dimen>
 
 
 </resources>
