@@ -35,10 +35,15 @@ Besides the arithmetic expression, the game screen also contains 13 buttons corr
 **Functions which I developed in the game screen**
 
 * A digit appears on the screen as soon as the user types each single digit, by using the on screen buttons, (i.e. the answer appears digit by digit and NOT just when the user types the whole answer).
+
 * If the user makes a mistake he/she can delete the last digit typed by pressing the DEL button. DEL deletes all digits typed one by one.
+
 * The user can indicates that the full answer is completed by hitting the # button. 
+
 * I have placed a minus - button in the keypad to enter minus values as the answer.
+
 * User has the option to turn on hints functions from the top left conrner while playing the game. If the hints option is “on” then he/she will be given 4 attempts per question (arithmetic expression), in case his first, second and third attempts to answer are incorrect. Every time that the user gives an incorrect answer when this option is “on” the application wil be displaying “greater” (if the user’s answer is less than the correct answer) and “less” (if the user’s answer is greater than the correct answer).
+
 * I have Extend the application by providing a countdown timer, counting from 10 down to 1, every tick occurring after 1 second exactly. The countdown timer is displayed in the main screen of the game, as shown in top right corener of the game screen. As soon as the counter reaches the value of 0, the next arithmetic expression is presented to the user (in this case the user does not need to press the # to move to the next question). However, if the user presses the # button before the counter reaches 0, the counter stops, the game displays whether the answer is correct or incorrect and a subsequent press of # moves to the next question.
 
 
