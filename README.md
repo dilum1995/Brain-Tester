@@ -48,6 +48,22 @@ Besides the arithmetic expression, the game screen also contains 13 buttons corr
 
 
 
+## How to Score in Brain-Tester
+
+In the end of each game (after 10 arithmetic expressions), the user will be displayed with a score which the sum of the points scored in each question. The score will take into account how fast the user answered the question. It will be calculated based on the following:
+
+* 0 marks will be assign for each incorrect guess.
+* **100/ 10 - time remaining]** marks for each correct guess. time remaining is the value of the countdown timer when the user pressed the # button to submit the answer. For example, if the user answered a question correctly and the time remaining was 4 secs, then the points received for the question are 100/(10-4) = 100/6=17 points. Points are rounded to the closest integer value. We assume that the user usually cannot answer in less than 0 secs in order to avoid a denominator of 0. If the user answers a question with 10 secs remaining, then the points awarded are 100 (for a correct guess).
+
+## Technology behind Brain-Tester
+
+1. Development IDE - Android Studio 3.0.1
+2. Teted AVD s - Google Pixel / Nexus 5X
+3. Tested API Level - API 26 / API 27
+
+
+
+
 
 
 
