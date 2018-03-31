@@ -48,7 +48,7 @@ Besides the arithmetic expression, the game screen also contains 13 buttons corr
 
 
 
-## How to Score in Brain-Tester
+## How to score in Brain-Tester
 
 In the end of each game (after 10 arithmetic expressions), the user will be displayed with a score which the sum of the points scored in each question. The score will take into account how fast the user answered the question. It will be calculated based on the following:
 
@@ -58,8 +58,9 @@ In the end of each game (after 10 arithmetic expressions), the user will be disp
 ## Technology behind Brain-Tester
 
 1. Development IDE - Android Studio 3.0.1
-2. Teted AVD s - Google Pixel / Nexus 5X
-3. Tested API Level - API 26 / API 27
+2. Main development language - Java & XML
+3. Teted AVD s - Google Pixel / Nexus 5X
+4. Tested API Level - API 26 / API 27
 
 
 
