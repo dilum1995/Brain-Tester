@@ -8,9 +8,12 @@ Brain Tester android application is a **basic brain training game**, which will 
 3. Teted AVD s - Google Pixel / Nexus 5X
 4. Tested API Level - API 26 / API 27
 
-Following picture is showing the main screens of this **Brain-Tester** game.
 
 ## Main Screens of Brain-Tester Game
+
+Following picture is showing the main screens of this **Brain-Tester** game.
+
+
 ![MainScreenOfTheGame](resources/mainScreens.png)
 
 
